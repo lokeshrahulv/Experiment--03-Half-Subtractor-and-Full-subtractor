@@ -50,26 +50,18 @@ RegisterNumber:  22004702
 ##Half subtractor:
 
 module halfsub(output B,D, input X,Y); 
-
 assign D = (X ^ Y); 
-
 assign B = (~X & Y); 
-
 endmodule 
 
 
 ##Full subtractor:
 
 module fullsub(X,Y,Z,Borrow,Difference); 
-
 input X,Y,Z; 
-
 output Borrow,Difference; 
-
 assign Difference = (X^Y^Z); 
-
 assign Borrow = (~X&(Y^Z)|(Y&Z)); 
-
 endmodule 
 
 ````
@@ -104,7 +96,7 @@ endmodule
 ![Screenshot_20230107_072459](https://user-images.githubusercontent.com/118423842/211155460-d78a2577-23e7-4c08-aa1d-0cb2a6bcd174.png)
 
 
-## Truthtable
+## Truthtable:
 
 ![Screenshot_20230107_072507](https://user-images.githubusercontent.com/118423842/211155478-6d9bc613-91db-4598-859c-7f315f67e823.png)
 
